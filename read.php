@@ -45,7 +45,6 @@ include "php/read.php";
         <td><?=$users['name']?></td>
         <td><?=$users['gender']?></td>
         <td><?=$users['programmer']?></td>
-        <td><?=$users['date']?></td>
         <td>
           <a href="">Edit</a>
           <a href="php/delete.php?id=<?=$users['id']?>">Delete</a>
