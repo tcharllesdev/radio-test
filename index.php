@@ -13,11 +13,6 @@
     <p>Responda às perguntas e consiga uma condição especial</p>
     <form action="php/create.php" method="post">
       <div>
-        <mark>
-            <?php if (isset($_GET['ms'])){
-              echo $_GET['ms'];
-            } ?>
-        </mark>
         <div>
           <label> Gênero</label>
           <input type="radio" name="gender" value="Masculino" checked >
@@ -72,7 +67,12 @@
         <input type="hidden" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
         <input type="submit" value="Create">
         <a href="read.php">View Users</a>
-
+        
+        <br><br><mark>
+            <?php if (isset($_GET['ms'])){
+              echo $_GET['ms'];
+            } ?>
+        </mark>
       </div>
     </form>
   </section>
