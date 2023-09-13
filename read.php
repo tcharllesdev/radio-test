@@ -33,6 +33,7 @@ include "php/read.php";
         <th>Name</th>
         <th>Gender</th>
         <th>Programmer</th>
+        <th>Timestamp</th>
         <th>Action</th>
       </tr>
       <?php 
@@ -45,6 +46,7 @@ include "php/read.php";
         <td><?=$users['name']?></td>
         <td><?=$users['gender']?></td>
         <td><?=$users['programmer']?></td>
+        <td><?php echo $users['timestamp']; ?></td>
         <td>
           <a href="">Edit</a>
           <a href="php/delete.php?id=<?=$users['id']?>">Delete</a>

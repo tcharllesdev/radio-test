@@ -34,6 +34,7 @@
         <input type="checkbox" name="programmer">
         <label>Are you a programmer?</label>
       </div><br>
+      <input type="hidden" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
       <input type="submit" value="Create">
       <a href="read.php">View Users</a>
 
