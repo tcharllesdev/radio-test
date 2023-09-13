@@ -32,13 +32,13 @@ include "php/read.php";
     <table>
         <tr>
             <th>#</th>
-            <th>Gender</th>
+            <th>Gênero</th>
             <th>Renda</th>
             <th>Dor</th>
             <th>Mudar</th>
             <th>Terapia</th>
-            <th>Timestamp</th>
-            <th>Action</th>
+            <th>Horário</th>
+            <th>Ação</th>
         </tr>
         <?php
         $i = 0;
@@ -54,7 +54,6 @@ include "php/read.php";
                 <td><?= $users['terapia'] ?></td>
                 <td><?php echo $users['timestamp']; ?></td>
                 <td>
-                    <a href="">Edit</a>
                     <a href="php/delete.php?id=<?= $users['id'] ?>">Delete</a>
                 </td>
             </tr>
