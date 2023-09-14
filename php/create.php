@@ -26,7 +26,7 @@ if (
 
     if ($result) {
         $ms = "Successfully Created";
-        header("Location: ../index.php?ms=$ms");
+        header("Location: ../obg.php?ms=$ms");
         exit;
     } else {
         $ms = "Unknown Error occurred";
