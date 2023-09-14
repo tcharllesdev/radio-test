@@ -46,7 +46,8 @@ include "php/read.php";
             $i++;
             ?>
             <tr>
-                <td><?= $i ?></td>
+                <td><?= $users['id'] ?></td>
+                <!-- <td><?= $i ?></td> -->
                 <td><?= $users['gender'] ?></td>
                 <td><?= $users['renda'] ?></td>
                 <td><?= $users['dor'] ?></td>
